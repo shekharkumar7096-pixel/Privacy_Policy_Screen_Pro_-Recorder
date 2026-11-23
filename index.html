@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ScreenPro</title>
+  <style>
+    :root {
+      --bg: #101114;
+      --card: #202329;
+      --elevated: #2a2e37;
+      --border: #323743;
+      --orange: #ff7900;
+      --orange-deep: #ff4500;
+      --text: #ffffff;
+      --muted: #b0b6c2;
+      --green: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--orange), var(--orange-deep));
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: 1.85rem;
+      line-height: 1.2;
+    }
+    .hero .meta {
+      font-size: 0.92rem;
+      opacity: 0.92;
+      margin-bottom: 14px;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .badge {
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.18rem;
+      color: var(--orange);
+    }
+    p { margin: 0 0 12px; color: var(--muted); }
+    ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text); }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--text);
+      background: var(--elevated);
+    }
+    td { color: var(--muted); }
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>ScreenPro Privacy Policy</h1>
+      <div class="meta">
+        Package ID: <strong>com.aistudio.screenpro.xkqvmr</strong> &bull;
+        Effective Date: <strong>November 22, 2026</strong> &bull;
+        Contact: <a href="mailto:shekharkumar7096@gmail.com" style="color:#fff;text-decoration:underline;">shekharkumar7096@gmail.com</a>
+      </div>
+      <p style="color:#fff;margin:0;">
+        ScreenPro ("we", "our", or "the App") is a native Android screen recorder, video editor, screenshot tool,
+        facecam overlay, and RTMP live streaming utility. We built ScreenPro with a local-first privacy architecture:
+        your recordings and screenshots remain on your device, and we never record without your explicit consent.
+      </p>
+      <div class="badges">
+        <span class="badge">Local-First Media Storage</span>
+        <span class="badge">No Account Required</span>
+        <span class="badge">AES-256-GCM Keystore</span>
+        <span class="badge">3-Day Trash Purge</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>1. Data Safety &amp; Information Overview</h2>
+      <p>ScreenPro does not operate developer-hosted user accounts or cloud video storage servers. Below is a summary aligned with Google Play's Data Safety requirements:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>How It Is Handled</th>
+            <th>Shared With Third Parties?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Screen Videos &amp; Screenshots</strong></td>
+            <td>Captured only after Android MediaProjection confirmation and stored strictly on your device (MediaStore / Room / optional SAF folder).</td>
+            <td>No — only shared if you explicitly tap Share or start an RTMP broadcast.</td>
+          </tr>
+          <tr>
+            <td><strong>Microphone &amp; Internal Audio</strong></td>
+            <td>Recorded only during active sessions when selected by you and muxed locally into your MP4 file.</td>
+            <td>No.</td>
+          </tr>
+          <tr>
+            <td><strong>Facecam Video (CameraX)</strong></td>
+            <td>Displayed as a local floating overlay and composited strictly on-device when enabled.</td>
+            <td>No.</td>
+          </tr>
+          <tr>
+            <td><strong>RTMP Stream Keys</strong></td>
+            <td>Encrypted on-device with hardware-backed Android Keystore (AES-256-GCM).</td>
+            <td>Transmitted only to the RTMP server URL you configure when you start streaming.</td>
+          </tr>
+          <tr>
+            <td><strong>Device Identifiers &amp; Ad Telemetry (Free Tier)</strong></td>
+            <td>Google AdMob processes Advertising ID (<code>AD_ID</code>), IP address, and ad interaction diagnostics to serve non-intrusive ads.</td>
+            <td>Yes, processed by Google AdMob under Google's Privacy Policy. Disabled for Premium users.</td>
+          </tr>
+          <tr>
+            <td><strong>In-App Purchases</strong></td>
+            <td>Subscriptions and Lifetime unlocks are handled directly by Google Play Billing. ScreenPro never accesses payment card details.</td>
+            <td>Processed by Google Play.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>2. App Permissions &amp; Why We Request Them</h2>
+      <ul>
+        <li><strong>Screen Capture (<code>MediaProjection</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>):</strong> Displays Android's mandatory system screen-capture confirmation dialog before recording your screen or taking a screenshot.</li>
+        <li><strong>Audio Recording (<code>RECORD_AUDIO</code> &amp; <code>FOREGROUND_SERVICE_MICROPHONE</code>):</strong> Optional permission requested only when capturing microphone narration or combined internal + mic audio.</li>
+        <li><strong>Camera (<code>CAMERA</code> &amp; <code>FOREGROUND_SERVICE_CAMERA</code>):</strong> Optional permission used solely when you activate the CameraX Facecam overlay.</li>
+        <li><strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> Optional permission used for the floating control bubble, timer pill, Facecam window, and live Brush annotation tools.</li>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Keeps a visible persistent recording notification active with Pause, Resume, Stop, and Screenshot actions.</li>
+        <li><strong>Zero-Permission Media Selection:</strong> Uses the Android Photo Picker (<code>PickVisualMedia</code>) to import videos into the editor and Storage Access Framework (<code>OpenDocumentTree</code>) for custom SD card directories without requesting broad storage permissions.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Third-Party Services (Google AdMob &amp; Google Play Billing)</h2>
+      <p><strong>Google AdMob:</strong> Free-tier users may see Banner, Interstitial (only after a recording finishes saving or an edit finishes exporting), and optional Rewarded Interstitial ads powered by the Google Mobile Ads SDK. Ads are automatically paused while screen recording is active and completely disabled when ScreenPro Premium is unlocked.</p>
+      <p><strong>Advertising Controls:</strong> You can opt out of personalized advertising or reset your Advertising ID at any time in <em>Android Settings &rarr; Privacy &rarr; Ads</em>. Learn more at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google Uses Information from Apps</a>.</p>
+      <p><strong>Google Play Billing:</strong> Premium upgrades are managed securely via Google Play Billing Library (v8). Manage or cancel subscriptions in the Google Play Store app under <em>Payments &amp; subscriptions</em>.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Data Retention, Security &amp; Deletion</h2>
+      <ul>
+        <li><strong>3-Day Trash Bin Retention:</strong> Deleted recordings and screenshots move to the in-app Trash Bin and are automatically purged after 3 days, or immediately when you select <em>Empty Trash</em>.</li>
+        <li><strong>Hardware-Backed Encryption:</strong> Saved RTMP stream keys are encrypted using Android Keystore AES-256-GCM and can be erased anytime via <em>Clear Key</em> in Live Streaming.</li>
+        <li><strong>Full Data Removal:</strong> You can delete all app preferences, local database entries, and encrypted keys at any time by clearing app storage in Android Settings or uninstalling ScreenPro.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Children's Privacy</h2>
+      <p>ScreenPro is not directed to children under the age of 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children. If you believe a child has provided personal information in connection with third-party ad or billing services, please contact us so we can assist promptly.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Changes to This Policy &amp; Contact Information</h2>
+      <p>We may update this Privacy Policy from time to time to reflect app improvements or legal requirements. Any updates will revise the Effective Date at the top of this page.</p>
+      <p>For privacy questions, compliance inquiries, or data deletion assistance, contact the developer at:<br />
+        <strong>Email:</strong> <a href="mailto:shekharkumar7096@gmail.com">shekharkumar7096@gmail.com</a><br />
+        <strong>App Package:</strong> <code>com.aistudio.screenpro.xkqvmr</code>
+      </p>
+    </section>
+
+    <footer class="footer">
+      &copy; 2026 ScreenPro. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
